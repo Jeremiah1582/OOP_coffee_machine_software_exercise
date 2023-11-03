@@ -3,9 +3,9 @@ from class_coffeeMachine import coffeeMachine
 
 code_coffee = coffeeMachine()
 
-
+# CLI
 while True:
-    # CLI
+    
     print("------Select Your Order-------")
     for i, (k, v) in enumerate(code_coffee.machineOptions.items()):
         print(f"{i+1}) {k}  {'€'+str(v) if isinstance(v,float) else ''}")
