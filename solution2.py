@@ -16,7 +16,6 @@ while True:
         )
     )
     print("-----------------------------")
-
     def switchboard(num):
         if num == len(code_coffee.machineOptions.items()):
             print("turning off machine...")
@@ -41,8 +40,10 @@ while True:
             }
 
             result = mySwitch[num]  # this is a reference to the function
+            
+            
             if result is not None:
-                print(result(total_cash))
+                print(result(total_cash))#passing value to new reassigned func
             else:
                 print("invalid option")
 
